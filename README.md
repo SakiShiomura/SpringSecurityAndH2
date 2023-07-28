@@ -1,0 +1,3 @@
+# SpringSecurityAndH2
+
+SpringSecurityとH2コンソールを同時に利用する際の設定例。
