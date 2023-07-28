@@ -20,7 +20,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf
                         .ignoringRequestMatchers(AntPathRequestMatcher.antMatcher("/h2-console/**")))
                 .headers(headers -> headers.frameOptions(
-                        frameOptions -> frameOptions.disable()))
+                         frame -> frame.sameOrigin()))
                 .securityMatcher("/**")
                 .formLogin(Customizer.withDefaults())
                 .csrf(Customizer.withDefaults())
